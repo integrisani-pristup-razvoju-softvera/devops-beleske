@@ -93,6 +93,6 @@ dugmetom **Use this template**.
 git init -b main
 git add .
 git commit -m "chore: početno stanje primer-aplikacije"
-gh repo create IntegrisaniPristupRazvojuAplikacija/devops-beleske --public --source . --push
-gh repo edit IntegrisaniPristupRazvojuAplikacija/devops-beleske --template
+gh repo create integrisani-pristup-razvoju-softvera/devops-beleske --public --source . --push
+gh repo edit integrisani-pristup-razvoju-softvera/devops-beleske --template
 ```
