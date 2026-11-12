@@ -1,0 +1,24 @@
+[project]
+name = "devops-beleske"
+version = "0.1.0"
+description = "Primer-aplikacija za predmet Integrisani pristup razvoju softvera"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+addopts = "--cov=app --cov-branch --cov-report=term-missing"
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["integration: testovi sa pravom bazom"]
+# Upozorenje iz starlette-a (nova verzija anyio-a), ne iz našeg koda.
+filterwarnings = ["ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning"]
+
+[tool.coverage.report]
+skip_covered = true
+# 2. laboratorijska vežba: ovde dodajte prag pokrivenosti (fail_under).
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "SIM"]
